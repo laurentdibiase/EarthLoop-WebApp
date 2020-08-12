@@ -1,0 +1,18 @@
+{
+  "name": "earthloop",
+  "version": "1.0.0",
+  "description": "EarthLoop Web Platform for Networked Music",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Laurent Di Biase",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.5.1",
+    "rtcmulticonnection": "^3.6.9",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  }
+}

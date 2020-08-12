@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+ *
+ https://www.w3schools.com/howto/howto_make_a_website.asp
+-->
+<html lang="en" dir="ltr">
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="description" content="EarthLoop, web platform for networked music performance">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta itemprop="description" content="Client-side EarthLoop session code samples">
+    <meta itemprop="image" content="imgs/visual.png">
+    <meta itemprop="name" content="EarthLoop session">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+    <meta name="keywords" content="WebRTC, WebAudio, FAUST,RTCMultiConnection,EartLoop,Networked Performance,Sound Experimentation" />
+
+    <!--<base target="_blank">-->
+
+    <title>EarthLoop audio connection</title>
+
+    <link rel="icon" sizes="192x192" href="imgs/logo.png">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+
+    <link rel="shortcut icon" href="imgs/favicon.ico" />
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="dist/RTCMultiConnection.js"></script>
+    <script src="dist/RTCMultiConnection.min.js"></script>
+    <script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <!-- <script src="https://www.webrtc-experiment.com/RecordRTC.js"></script> -->
+    <style type="text/css">
+
+
+    html, body, section, ul, li, nav, a, h1, h2 {
+        padding: 0;
+        margin: 0;
+        outline: none;
+        text-shadow: none;
+        box-shadow: none;
+        border-radius: 0;
+        text-decoration: none;
+    }
+
+    body {
+        font-family: Arial, Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-size: 17px;
+        line-height: 1.5em;
+    }
+    </style>
+</head>
+<body>
+
+<div class="header" style="text-align: center;">
+<h1><a class="logo" href="/" style="position: right;"><img src="imgs/logo.png" alt="EarthLoop"></a>
+  <span>EarthLoop</span>
+  </h1>
+  <p>Connected People for Networked Music</p>
+</div>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="play.html">Play</a>
+  <a>Listen</a>
+  <a href="about.html" class="right">About</a>
+</div>
+  <h1>
+    <p class="no-mobile" style=" margin-left: 10px">
+      Multi-user Auditorium Platform
+    </p>
+  </h1>
+
+    <h3>
+        Listen to the current session here !
+
+    </h3>
+<section class="experiment" style=" margin-top: 20px; margin-left: 10px "> 
+
+    <!-- list of all available broadcasting rooms -->
+    <table style="width: 100%;" id="rooms-list"></table>
+
+    <div id="room-urls" style="text-align: center;display: none;background: #f1f1f1"></div>
+    
+    <div class="make-center" id="broadcast-viewers-counter"></div>
+
+    <button id="join-room">Listen to the Session</button>
+    <button id="leave-room">Leave Session</button>
+    <hr>
+    <audio id="audio-monitoring" controls></audio>
+
+</section>
+
+    
+
+<script src="assets/listen.js"></script>
+
+
+
+</body>
+</html>
