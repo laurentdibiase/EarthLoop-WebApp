@@ -13,7 +13,7 @@ Collaboratif web platform for networked Music
 
 This project use WebRTC API from the RTCMulticonnection Library of Muaz Khan
 https://github.com/muaz-khan. 
-The audio plugins come form Faust code and are embeded in a Web Audio API
+The audio plugins come from Faust code and are embeded in a Web Audio API.
 
 
 //To launch the program file from terminal :  
